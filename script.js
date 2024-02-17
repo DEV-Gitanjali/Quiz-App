@@ -41,3 +41,24 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+
+let currenQuiz =0
+let score =0
+
+loadQuiz()
+
+function loadQuiz(){
+
+    deselectAnswers()
+    const currenQuizData = quizData[currenQuiz]
+
+    questionEl.innerText = currenQuizData.question
+    a_text.innerText = currenQuizData.a
+    b_text.innerText = currenQuizData.b
+    c_text.innerText = currenQuizData.c
+    d_text.innerText = currenQuizData.d
+}
+
+
+
+ 
